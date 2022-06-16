@@ -64,22 +64,22 @@ class ArticleDetailView(LoginRequiredMixin, UserPassesTestMixin, DetailView):
 class ArticleCreateView(LoginRequiredMixin, UserPassesTestMixin, CreateView):
     template_name = "articles/new.html"
     model= Article
-    fields = ["title", "body", "author", "section"] 
+    fields = ["title", "section", "body", "author" ] 
 
     def form_valid(self, form):
         form.instance.author = self.request.user
         return super().form_valid(form)
 
     def test_func(self):
-        return self.request.user.is_staff > 1   
+        return self.request.user.role.id > 1   
 
 class ArticleUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     template_name = "articles/edit.html"
     model= Article
-    fields = ["title", "body", "author"]
+    fields = ["title", "section", "body", "author"]
     
     def test_func(self):
-        if self.request.user.role > 1:
+        if self.request.user.role.id > 1:
             article = self.get_object()
             return article.author == self.request.user
         return False
@@ -90,7 +90,7 @@ class ArticleDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
     success_url = reverse_lazy ("home")  
 
     def test_func(self):
-        if self.request.user.role > 1:
+        if self.request.user.role.id > 1:
             article = self.get_object()
             return article.author == self.request.user  
         return False     

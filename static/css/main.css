@@ -1,3 +1,42 @@
-h1{
-    color: red;
+
+#newsbar{
+    border-top: 3px solid black;
+}
+.newsbar{
+    color: black;
+    font-size: larger;
+    font-weight:600;
+    text-decoration: none;
+}
+.line{
+   margin-top: 10px; 
+   margin-left: 90px;
+   height: 2px;
+   width:85%;
+  
+   background-color: black;
+}
+.line2{
+    margin-top: 1px; 
+    margin-left: 90px;
+    height: 1px;
+    width:85%;
+   
+    background-color: black;
+ }
+#log-in{
+    align-content: right;
+
+}
+#sign-up{
+    color:white;
+    background-color: black;
+    font-weight: bold ;
+    border: 1px solid white;
+    border-radius: 4px;
+    width: 105px;
+    height: 35px;
+    text-align: center;
+    padding-bottom: 10px;
+
 }
