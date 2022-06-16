@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+
+
+{% block title %}Article{% endblock title %}
+
+{% block content %}
+    <h1>{{ section }}</h1>
+    
+    <div class="card">
+            <ul>
+            {% for post in post_list %}
+            <li><a href="{% url 'detail' post.id %}">{{ post.title }}</a></li>
+            {% endfor %}
+            </ul>
+            
+    </div>
+        <br />
+    
+    
+    </ul>  
+{% endblock content %}
