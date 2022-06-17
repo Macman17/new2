@@ -1,3 +1,7 @@
+*{
+    background-color: rgb(247, 247, 247);
+  
+}
 
 #newsbar{
     border-top: 3px solid black;
@@ -10,17 +14,17 @@
 }
 .line{
    margin-top: 10px; 
-   margin-left: 90px;
+   margin-left: 50px;
    height: 2px;
-   width:85%;
+   width:93%;
   
    background-color: black;
 }
 .line2{
     margin-top: 1px; 
-    margin-left: 90px;
+    margin-left: 50px;
     height: 1px;
-    width:85%;
+    width:93%;
    
     background-color: black;
  }
@@ -38,5 +42,109 @@
     height: 35px;
     text-align: center;
     padding-bottom: 10px;
+    
 
+}
+#home-politics{
+   
+    
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    margin-left: 43%;
+    align-self: center;
+    
+     
+    
+}
+.card{
+    padding-bottom: 10%;
+}
+.card img{
+    height: 70%;
+    width: 100%;
+}
+
+.col4{
+    margin-top: 20px;
+    flex: 1;
+}
+.box2{
+    flex: 2;
+    
+    margin-top: 20px;
+    margin-left: 53%;
+}
+.box3{
+    flex: 3;
+    margin-top: 20px;
+    margin-left: 53%;
+}
+.box4{
+    flex: 4;
+    margin-top: 20px;
+    margin-left: 53%;
+}
+
+
+
+
+
+.home-btn{
+    border: 1px solid black;
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    font-size: large;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 5px;
+}
+.home-btn2{
+    border: 1px solid black;
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    font-size: large;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-right: 220px;
+}
+.home-btn3{
+    border: 1px solid black;
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    font-size: large;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-right: 45%;
+}
+.headhome{
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    font-weight: bold;
+}
+.headhome:hover{
+    text-decoration: underline;
+    color: black;
+}
+.headhome2{
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+.headhome2:hover{
+    text-decoration: underline;
+    color: black;
 }

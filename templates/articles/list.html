@@ -10,11 +10,13 @@
     <h1>{{ section }}</h1>
     
     <div class="card">
-            <ul>
-            {% for post in post_list %}
-            <li><a href="{% url 'detail' post.id %}">{{ post.title }}</a></li>
+            
+            {% for article in post_list %}
+            <a href="{% url 'detail' article.id %}">{{ article.title }}</a>
+            <strong> By {{ article.author }} | On {{ article.created_on }}</strong>
+            <p>{{ article.body }}</p>
             {% endfor %}
-            </ul>
+            
             
     </div>
         <br />

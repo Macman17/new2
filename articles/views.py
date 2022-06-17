@@ -10,6 +10,7 @@ from .models import Article
 class ArticleListView(LoginRequiredMixin, ListView):
     template_name = "articles/list.html"
     model= Article
+    success_url = reverse_lazy ("detail") 
     
 
 

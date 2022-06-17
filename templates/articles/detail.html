@@ -8,7 +8,8 @@
 
 {% block content %}
     <h1>{{ article.title }}</h1>
-    <strong> By {{ article.title }} | On {{ article.create_on }}</strong>
+    
+    <strong> By {{ article.title }} | On {{ article.created_on }}</strong>
     <p>{{ article.body }}</p>
     {% if user.is_authenticated %}
     <div class="row">

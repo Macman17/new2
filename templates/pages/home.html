@@ -6,11 +6,48 @@
 {% block title %}Home{% endblock title %}
 
 {% block content %}
-<div class="home-title">
-
-    <h1>Express Your Cooking Journey!</h1>
-    <h3>Share recipes, tips, and experiences!</h3>
-    <p>Sign up above to blog and check out others post!</p>
-</div>
-
+<div class="box">  
+    <div class="col4">
+        <div class="card" style="width: 42rem;"  id="home-politics">
+            <img src="/static/img/trump.jpg" class="card-img-top" alt="History in HD">
+            <div class="card-body">
+            <h3 class="card-title" ><a href="#" class="headhome">Big win for Trump</a></h3>
+            <p class="card-text">Trump backed candidates win primary!</p>
+            <a href="{% url 'politics_list' %}" class="home-btn">Politics</a>
+            </div>
+        </div>
+    </div>
+    <div class="box2">
+        <div class="col1">
+                    <div class="card"  style="width: 21rem; height: 22rem; border: 1px solid black; " >
+                        <img src="/static/img/warriors.webp" id="home-img" class="card-img-top" alt="History in HD">
+                        <a href="{% url 'sports_list' %}" class="home-btn2">Sports</a>
+                        <p class="card-text"><a href="#" class="headhome2">Warriors win thanks to a unlikely good 4th qtr. by Wiggins!</a></p>
+                        
+                    </div>
+                    
+        </div>
+    </div>
+    <div class="box3">               
+        <div class="col4">
+                    <div class="card" style="width: 21rem; height: 22rem; border: 1px solid black; "  >
+                        <img src="/static/img/gas.jpg" id="home-img" class="card-img-top" alt="History in HD">
+                        <a href="{% url 'personalfinance_list' %}" class="home-btn3">Personal Finance</a>
+                        <p class="card-text"><a href="#" class="headhome2">Gas is set to go up an average of $1.50 per gallon.</a></p>
+                            
+                    </div>
+        </div>
+    </div> 
+    <div class="box4"> 
+        <div class="col3">
+                    <div class="card"  style="width: 21rem; height: 22rem; border: 1px solid black; "  >
+                        <img src="/static/img/crypto.jpg" id="home-img" class="card-img-top"  alt="History in HD">
+                        <a href="{% url 'personalfinance_list' %}" class="home-btn3">Personal Finance</a>
+                        <p class="card-text"><a href="#" class="headhome2">Fears of the statement made by the Fed hits Crypto Hard today!</a></p>
+                        
+                        
+                    </div>
+        </div>
+    </div>  
+</div>    
 {% endblock content %}
